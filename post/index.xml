@@ -13,12 +13,15 @@
     
     
     <item>
-      <title>Workflow for this page</title>
-      <link>/post/testpost/</link>
+      <title>How To: This Website</title>
+      <link>/post/website/</link>
       <pubDate>Wed, 25 Jul 2018 16:12:05 +0200</pubDate>
       
-      <guid>/post/testpost/</guid>
-      <description> Execute hugo server to see how the webpage looks. Deploy it to github using ./deploy.sh &amp;ldquo;Commit message&amp;rdquo;  </description>
+      <guid>/post/website/</guid>
+      <description>I have been searching long for an easy to make, easy to maintain website. Most things sucked until I found out about rmarkdown webpages. After a while it got boring building them. I discovered Hugo, which seems to be the perfect solution for me.
+Getting Started Hugo, GitHub pages, &amp;hellip;
+Manage Content Start your webpage with
+$ hugo server  Add content, change content and reiterate. If you are happy with everything, deploy it to github using</description>
     </item>
     
   </channel>

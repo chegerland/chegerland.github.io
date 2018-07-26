@@ -20,15 +20,34 @@
     </item>
     
     <item>
-      <title>Workflow for this page</title>
-      <link>/post/testpost/</link>
+      <title>How To: This Website</title>
+      <link>/post/website/</link>
       <pubDate>Wed, 25 Jul 2018 16:12:05 +0200</pubDate>
       
-      <guid>/post/testpost/</guid>
-      <description>&lt;ol&gt;
-&lt;li&gt;Execute &lt;em&gt;hugo server&lt;/em&gt; to see how the webpage looks.&lt;/li&gt;
-&lt;li&gt;Deploy it to github using &lt;em&gt;./deploy.sh &amp;ldquo;Commit message&amp;rdquo;&lt;/em&gt;&lt;/li&gt;
-&lt;/ol&gt;
+      <guid>/post/website/</guid>
+      <description>
+
+&lt;p&gt;I have been searching long for an easy to make, easy to maintain website.
+Most things &lt;em&gt;sucked&lt;/em&gt; until I found out about rmarkdown webpages.
+After a while it got boring building them.
+I discovered Hugo, which seems to be the perfect solution for me.&lt;/p&gt;
+
+&lt;h1 id=&#34;getting-started&#34;&gt;Getting Started&lt;/h1&gt;
+
+&lt;p&gt;Hugo, GitHub pages, &amp;hellip;&lt;/p&gt;
+
+&lt;h1 id=&#34;manage-content&#34;&gt;Manage Content&lt;/h1&gt;
+
+&lt;p&gt;Start your webpage with&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ hugo server
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Add content, change content and reiterate.
+If you are happy with everything, deploy it to github using&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ ./deploy.sh &amp;quot;Commit message&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
