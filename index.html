@@ -26,7 +26,7 @@
 
   
   
-  <meta name="theme-color" content="#0095eb">
+  <meta name="theme-color" content="#795548">
   
   
   
@@ -46,6 +46,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin="anonymous">
   
   
   
@@ -173,19 +175,24 @@
         
 
         
-        
-        
-        
-        
-          
-        
-
-        <li class="nav-item">
-          <a href="/#projects" data-target="#projects">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true">
             
             <span>Projects</span>
             
+            <span class="caret"></span>
           </a>
+          <ul class="dropdown-menu">
+            
+            <li class="nav-item">
+              <a href="/#calculations" data-target="#calculations">
+                
+                <span>Calculations</span>
+                
+              </a>
+            </li>
+            
+          </ul>
         </li>
 
         
@@ -257,7 +264,7 @@
 
 
 
-<div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person" itemref="person-email person-telephone person-address">
+<div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person" itemref="person-email person-address">
   <div class="col-xs-12 col-md-4">
     <div id="profile">
 
@@ -341,7 +348,7 @@
             <i class="fa-li fa fa-graduation-cap"></i>
             <div class="description">
               <p class="course">BSc in Physics, 2017</p>
-              <p class="institution">Humboldt Univerity Berlin</p>
+              <p class="institution">Humboldt University Berlin</p>
             </div>
           </li>
           
@@ -350,37 +357,6 @@
       
 
     </div>
-  </div>
-</div>
-
-    </div>
-  </section>
-  
-
-  
-  
-  
-  <section id="publications_selected" class="home-section">
-    <div class="container">
-      
-
-
-
-<div class="row">
-  <div class="col-xs-12 col-md-4 section-heading">
-    <h1>Selected Publications</h1>
-    
-  </div>
-  <div class="col-xs-12 col-md-8">
-    
-
-    
-      
-    
-
-    
-    
-
   </div>
 </div>
 
@@ -400,7 +376,7 @@
 
 <div class="row">
   <div class="col-xs-12 col-md-4 section-heading">
-    <h1>Recent Publications</h1>
+    <h1>Publications</h1>
     
     
   </div>
@@ -415,34 +391,42 @@
 
     
     
+      
+        <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
+  <i class="fa fa-file-text-o pub-icon" aria-hidden="true"></i>
+  <span itemprop="author">
+    Christoph Egerland</span>.
+  <a href="/publication/bachelorthesis/" itemprop="name">Bachelorthesis</a>.
+  Plasmonic contribution to the Casimir force between two layers of graphene,
+  2018.
+  <p>
 
-  </div>
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="/pdf/bachelorthesis.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
 </div>
 
-    </div>
-  </section>
-  
-
-  
-  
-  
-  <section id="talks" class="home-section">
-    <div class="container">
       
-
-
-
-
-<div class="row">
-  <div class="col-xs-12 col-md-4 section-heading">
-    <h1>Recent &amp; Upcoming Talks</h1>
-    
-    
-  </div>
-  <div class="col-xs-12 col-md-8">
     
 
-    
   </div>
 </div>
 
@@ -477,97 +461,86 @@
 
       
       
-    
 
+        
+
+        
+        
+
+        
+        
+
+      
+      
+        
+        
+          
+
+<div class="card-simple" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
+  
+
+<div class="article-metadata">
+
+  
+  
+  <div itemprop="author">
+    Christoph Egerland
+    
   </div>
+  
+
+  <span class="article-date">
+    
+    <meta content="2018-07-25 16:12:05 &#43;0200 CEST" itemprop="datePublished">
+    <time datetime="2018-07-25 16:12:05 &#43;0200 CEST" itemprop="dateModified">
+      Jul 25, 2018
+    </time>
+  </span>
+  <span itemscope itemprop="author publisher" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Christoph H. Egerland">
+  </span>
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    1 min read
+  </span>
+  
+
+  
+  
+
+  
+  
+  
+  
+
+  
+
 </div>
 
-    </div>
-  </section>
-  
 
   
   
-  
-  <section id="projects" class="home-section">
-    <div class="container">
-      
-
-
-
-<div class="row">
-  <div class="col-xs-12 col-md-4 section-heading">
-    <h1>Projects</h1>
+  <h3 class="article-title" itemprop="headline">
+    <a href="/post/testpost/" itemprop="url">Workflow for this page</a>
+  </h3>
+  <div class="article-style" itemprop="articleBody">
+    
+    <p>How I manage these things.</p>
     
   </div>
-  <div class="col-xs-12 col-md-8">
-    
-
-    
-    
-
-    
-
-    
-
-    <div class="row isotope projects-container js-layout-masonry">
-
-      
-
-    </div>
-
-    
-
-  </div>
+  <p class="read-more" itemprop="mainEntityOfPage">
+    <a href="/post/testpost/" class="btn btn-primary btn-outline">
+      CONTINUE READING
+    </a>
+  </p>
 </div>
 
-    </div>
-  </section>
-  
-
-  
-  
-  
-  <section id="teaching" class="home-section">
-    <div class="container">
+        
       
 
-
-<div class="row">
-  
-  <div class="col-xs-12 col-md-4 section-heading">
-    <h1>Custom Section</h1>
-    
-  </div>
-  <div class="col-xs-12 col-md-8">
-    <p>This is an example of using the <em>custom</em> widget to create your own homepage section.</p>
-
-<p>To remove this section, either delete <code>content/home/teaching.md</code> or edit the frontmatter of the file to deactivate the widget by setting <code>active = false</code>.</p>
-
-  </div>
-  
-</div>
-
-    </div>
-  </section>
-  
-
-  
-  
-  
-  <section id="tags" class="home-section">
-    <div class="container">
       
-
-
-<div class="row">
-  <div class="col-xs-12 col-md-4 section-heading">
-    <h1>Tags</h1>
-    
-  </div>
-  <div class="col-xs-12 col-md-8">
-    
-
     
 
   </div>
@@ -600,7 +573,7 @@
       
       <li>
         <i class="fa-li fa fa-envelope fa-2x" aria-hidden="true"></i>
-        <span id="person-email" itemprop="email"><a href="mailto:test@example.org">test@example.org</a></span>
+        <span id="person-email" itemprop="email"><a href="mailto:egerlanc@physik.hu-berlin.de">egerlanc@physik.hu-berlin.de</a></span>
       </li>
       
 
@@ -608,11 +581,6 @@
 
       
 
-      
-      <li>
-        <i class="fa-li fa fa-phone fa-2x" aria-hidden="true"></i>
-        <span id="person-telephone" itemprop="telephone"><a href="tel:888%20888%2088%2088">888 888 88 88</a></span>
-      </li>
       
 
       
@@ -622,19 +590,24 @@
       
       <li>
         <i class="fa-li fa fa-map-marker fa-2x" aria-hidden="true"></i>
-        <span id="person-address" itemprop="address">Building 1 Room 1, Stanford University, California, 90210, USA</span>
+        <span id="person-address" itemprop="address">Max-Born-Strasse 2A, 12489 Berlin, Germany</span>
       </li>
       
 
-      
-      <li>
-        <i class="fa-li fa fa-clock-o fa-2x" aria-hidden="true"></i>
-        <span>Monday 10:00 to 13:00 or email for appointment</span>
-      </li>
       
 
     </ul>
 
+    
+    <div class="hidden">
+      <input id="map-provider" value="2">
+      <input id="map-lat" value="52.43133">
+      <input id="map-lng" value="13.52568">
+      <input id="map-dir" value="Max-Born-Strasse 2A, 12489 Berlin, Germany">
+      <input id="map-zoom" value="10">
+      <input id="map-api-key" value="">
+    </div>
+    <div id="map"></div>
     
 
   </div>
@@ -709,6 +682,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin="anonymous"></script>
+    
     
     <script src="/js/hugo-academic.js"></script>
     
@@ -727,6 +702,18 @@
       <script>hljs.initHighlightingOnLoad();</script>
     
 
+    
+    
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        CommonHTML: { linebreaks: { automatic: true } },
+        tex2jax: { inlineMath: [ ['$', '$'], ['\\(','\\)'] ], displayMath: [ ['$$','$$'], ['\\[', '\\]'] ], processEscapes: false },
+        TeX: { noUndefined: { attributes: { mathcolor: 'red', mathbackground: '#FFEEEE', mathsize: '90%' } } },
+        messageStyle: 'none'
+      });
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous"></script>
     
     
 

@@ -25,7 +25,7 @@
 
   
   
-  <meta name="theme-color" content="#0095eb">
+  <meta name="theme-color" content="#795548">
   
   
   
@@ -38,6 +38,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin="anonymous">
   
   
   
@@ -165,19 +167,24 @@
         
 
         
-        
-        
-        
-        
-          
-        
-
-        <li class="nav-item">
-          <a href="/#projects">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true">
             
             <span>Projects</span>
             
+            <span class="caret"></span>
           </a>
+          <ul class="dropdown-menu">
+            
+            <li class="nav-item">
+              <a href="/#calculations">
+                
+                <span>Calculations</span>
+                
+              </a>
+            </li>
+            
+          </ul>
         </li>
 
         
@@ -242,6 +249,9 @@
 
       
       
+        
+        
+      
 
       <p>
         Filter by type:
@@ -249,16 +259,69 @@
         <select class="pub-filters pubtype-select" data-filter-group="pubtype">
           <option value="*">All</option>
           
+          <option value=".pubtype-0">
+            Uncategorized
+          </option>
+          
         </select>
 
         <select class="pub-filters" data-filter-group="year">
           <option value="*">All</option>
           
           
+          
+          <option value=".year-2018">
+            2018
+          </option>
+          
+          
         </select>
       </p>
 
       <div id="container-publications">
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-md-12 isotope-item pubtype-0 year-2018">
+          
+            <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
+  <i class="fa fa-file-text-o pub-icon" aria-hidden="true"></i>
+  <span itemprop="author">
+    Christoph Egerland</span>.
+  <a href="/publication/bachelorthesis/" itemprop="name">Bachelorthesis</a>.
+  Plasmonic contribution to the Casimir force between two layers of graphene,
+  2018.
+  <p>
+
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="/pdf/bachelorthesis.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+</div>
+
+          
+        </div>
+
         
       </div>
 
@@ -328,6 +391,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin="anonymous"></script>
+    
     
     <script src="/js/hugo-academic.js"></script>
     
@@ -335,6 +400,18 @@
     
     
 
+    
+    
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        CommonHTML: { linebreaks: { automatic: true } },
+        tex2jax: { inlineMath: [ ['$', '$'], ['\\(','\\)'] ], displayMath: [ ['$$','$$'], ['\\[', '\\]'] ], processEscapes: false },
+        TeX: { noUndefined: { attributes: { mathcolor: 'red', mathbackground: '#FFEEEE', mathsize: '90%' } } },
+        messageStyle: 'none'
+      });
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous"></script>
     
     
 
