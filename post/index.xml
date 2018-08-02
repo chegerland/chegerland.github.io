@@ -18,10 +18,10 @@
       <pubDate>Wed, 25 Jul 2018 16:12:05 +0200</pubDate>
       
       <guid>/post/website/</guid>
-      <description>I have been searching long for an easy to make, easy to maintain website. Most things sucked until I found out about rmarkdown webpages. After a while it got boring building them. I discovered Hugo, which seems to be the perfect solution for me.
-Getting Started Hugo, GitHub pages, &amp;hellip;
-Manage Content Start your webpage with
-$ hugo server  Add content, change content and reiterate. If you are happy with everything, deploy it to github using</description>
+      <description>I have been searching long and wide for an easy to make and easy to maintain website. Most things sucked until I found out about R Markdown Websites. You basically write your content in markdown and then R Markdown handles everything for you. It was certainly a way to do it and for everyone who wants to try I can recommend:
+ Nick Strayer
+ Robert Mitchell
+  There were however some issues that bothered me.</description>
     </item>
     
   </channel>

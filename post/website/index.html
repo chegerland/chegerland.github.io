@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="theme" content="hugo-academic">
-  <meta name="generator" content="Hugo 0.44" />
+  <meta name="generator" content="Hugo 0.45.1" />
   <meta name="author" content="Christoph H. Egerland">
 
   
@@ -17,7 +17,10 @@
       
     
   
-  <meta name="description" content="How I manage these things.">
+  <meta name="description" content="I have been searching long and wide for an easy to make and easy to maintain website. Most things sucked until I found out about R Markdown Websites. You basically write your content in markdown and then R Markdown handles everything for you. It was certainly a way to do it and for everyone who wants to try I can recommend:
+ Nick Strayer
+ Robert Mitchell
+  There were however some issues that bothered me.">
 
   
   <link rel="alternate" hreflang="en-us" href="/post/website/">
@@ -78,7 +81,10 @@
   <meta property="og:site_name" content="cheger.land">
   <meta property="og:url" content="/post/website/">
   <meta property="og:title" content="How To: This Website | cheger.land">
-  <meta property="og:description" content="How I manage these things.">
+  <meta property="og:description" content="I have been searching long and wide for an easy to make and easy to maintain website. Most things sucked until I found out about R Markdown Websites. You basically write your content in markdown and then R Markdown handles everything for you. It was certainly a way to do it and for everyone who wants to try I can recommend:
+ Nick Strayer
+ Robert Mitchell
+  There were however some issues that bothered me.">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="2018-07-25T16:12:05&#43;02:00">
@@ -303,7 +309,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    1 min read
+    2 min read
   </span>
   
 
@@ -326,24 +332,40 @@
     <div class="article-style" itemprop="articleBody">
       
 
-<p>I have been searching long for an easy to make, easy to maintain website.
-Most things <em>sucked</em> until I found out about rmarkdown webpages.
-After a while it got boring building them.
-I discovered Hugo, which seems to be the perfect solution for me.</p>
+<p>I have been searching long and wide for an easy to make and easy to maintain website.
+Most things <em>sucked</em> until I found out about <a href="https://rmarkdown.rstudio.com/rmarkdown_websites.html" target="_blank">R Markdown Websites</a>.
+You basically write your content in markdown and then R Markdown handles everything for you.
+It was certainly a way to do it and for everyone who wants to try I can recommend:</p>
+
+<ul>
+<li><p><a href="http://nickstrayer.me/RMarkdown_Sites_tutorial/" target="_blank">Nick Strayer</a></p></li>
+
+<li><p><a href="http://robertmitchellv.com/blog-building-site-with-rmarkdown" target="_blank">Robert Mitchell</a></p></li>
+</ul>
+
+<p>There were however some issues that bothered me.
+I couldn&rsquo;t get the page to look the way I wanted it to look (which is probably my fault) and building the website took quite long, i.e. up to a minute.
+The webpage stood still for a couple of months until I discovered <a href="https://gohugo.io/" target="_blank">Hugo</a>, which for now is the perfect solution for me.</p>
 
 <h1 id="getting-started">Getting Started</h1>
 
-<p>Hugo, GitHub pages, &hellip;</p>
+<p>The <a href="https://gohugo.io/getting-started/quick-start/" target="_blank">Quick Start</a> shows how to install Hugo and deploy a first website with it.
+Just like my last webpage, this page is hosted on GitHub and there&rsquo;s a nice <a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/" target="_blank">manual</a> on how to deploy Hugo as a GitHub Page.
+Furthermore I&rsquo;m using the <a href="https://sourcethemes.com/academic/docs/install" target="_blank">Academic Theme</a> on this site (with some small modifications).</p>
 
-<h1 id="manage-content">Manage Content</h1>
+<h1 id="managing-content">Managing Content</h1>
 
-<p>Start your webpage with</p>
+<p>My workflow on this websites consists of starting the webpage with</p>
 
 <pre><code>$ hugo server
 </code></pre>
 
-<p>Add content, change content and reiterate.
-If you are happy with everything, deploy it to github using</p>
+<p>All the content is written in markdown files, which are easy to read and edit (for a good markdown tutorial see <a href="https://commonmark.org/help/" target="_blank">commonmark</a>).</p>
+
+<p>I add content, change content and reiterate until I&rsquo;m happy.
+Saving the markdown files automatically rebuilds the site, so I can instantly see the changes.</p>
+
+<p>To finish it off I&rsquo;m using a <a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/#put-it-into-a-script" target="_blank">script</a> to deploy the page to GitHub.</p>
 
 <pre><code>$ ./deploy.sh &quot;Commit message&quot;
 </code></pre>

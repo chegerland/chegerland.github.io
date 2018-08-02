@@ -27,24 +27,40 @@
       <guid>/post/website/</guid>
       <description>
 
-&lt;p&gt;I have been searching long for an easy to make, easy to maintain website.
-Most things &lt;em&gt;sucked&lt;/em&gt; until I found out about rmarkdown webpages.
-After a while it got boring building them.
-I discovered Hugo, which seems to be the perfect solution for me.&lt;/p&gt;
+&lt;p&gt;I have been searching long and wide for an easy to make and easy to maintain website.
+Most things &lt;em&gt;sucked&lt;/em&gt; until I found out about &lt;a href=&#34;https://rmarkdown.rstudio.com/rmarkdown_websites.html&#34; target=&#34;_blank&#34;&gt;R Markdown Websites&lt;/a&gt;.
+You basically write your content in markdown and then R Markdown handles everything for you.
+It was certainly a way to do it and for everyone who wants to try I can recommend:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://nickstrayer.me/RMarkdown_Sites_tutorial/&#34; target=&#34;_blank&#34;&gt;Nick Strayer&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://robertmitchellv.com/blog-building-site-with-rmarkdown&#34; target=&#34;_blank&#34;&gt;Robert Mitchell&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;There were however some issues that bothered me.
+I couldn&amp;rsquo;t get the page to look the way I wanted it to look (which is probably my fault) and building the website took quite long, i.e. up to a minute.
+The webpage stood still for a couple of months until I discovered &lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34;&gt;Hugo&lt;/a&gt;, which for now is the perfect solution for me.&lt;/p&gt;
 
 &lt;h1 id=&#34;getting-started&#34;&gt;Getting Started&lt;/h1&gt;
 
-&lt;p&gt;Hugo, GitHub pages, &amp;hellip;&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&#34;https://gohugo.io/getting-started/quick-start/&#34; target=&#34;_blank&#34;&gt;Quick Start&lt;/a&gt; shows how to install Hugo and deploy a first website with it.
+Just like my last webpage, this page is hosted on GitHub and there&amp;rsquo;s a nice &lt;a href=&#34;https://gohugo.io/hosting-and-deployment/hosting-on-github/&#34; target=&#34;_blank&#34;&gt;manual&lt;/a&gt; on how to deploy Hugo as a GitHub Page.
+Furthermore I&amp;rsquo;m using the &lt;a href=&#34;https://sourcethemes.com/academic/docs/install&#34; target=&#34;_blank&#34;&gt;Academic Theme&lt;/a&gt; on this site (with some small modifications).&lt;/p&gt;
 
-&lt;h1 id=&#34;manage-content&#34;&gt;Manage Content&lt;/h1&gt;
+&lt;h1 id=&#34;managing-content&#34;&gt;Managing Content&lt;/h1&gt;
 
-&lt;p&gt;Start your webpage with&lt;/p&gt;
+&lt;p&gt;My workflow on this websites consists of starting the webpage with&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;$ hugo server
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Add content, change content and reiterate.
-If you are happy with everything, deploy it to github using&lt;/p&gt;
+&lt;p&gt;All the content is written in markdown files, which are easy to read and edit (for a good markdown tutorial see &lt;a href=&#34;https://commonmark.org/help/&#34; target=&#34;_blank&#34;&gt;commonmark&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;I add content, change content and reiterate until I&amp;rsquo;m happy.
+Saving the markdown files automatically rebuilds the site, so I can instantly see the changes.&lt;/p&gt;
+
+&lt;p&gt;To finish it off I&amp;rsquo;m using a &lt;a href=&#34;https://gohugo.io/hosting-and-deployment/hosting-on-github/#put-it-into-a-script&#34; target=&#34;_blank&#34;&gt;script&lt;/a&gt; to deploy the page to GitHub.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;$ ./deploy.sh &amp;quot;Commit message&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
