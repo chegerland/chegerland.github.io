@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
@@ -14,10 +13,14 @@
   
   
   
-  <meta name="description" content="Student">
+    
+      
+    
+  
+  <meta name="description" content="I can also put my animation easily into these posts.  Like this small animation about quantum friction:      Try and drag the top atom around! Depending on whether you switched the material response on or off the mirroratom will or will not follow the motion of the atom above the material. ">
 
   
-  <link rel="alternate" hreflang="en-us" href="/">
+  <link rel="alternate" hreflang="en-us" href="/post/anim/">
 
   
 
@@ -68,27 +71,29 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="/">
+  <link rel="canonical" href="/post/anim/">
 
   <meta property="twitter:card" content="summary_large_image">
   
   <meta property="og:site_name" content="cheger.land">
-  <meta property="og:url" content="/">
-  <meta property="og:title" content="cheger.land">
-  <meta property="og:description" content="Student">
+  <meta property="og:url" content="/post/anim/">
+  <meta property="og:title" content="D3 Animations in Hugo | cheger.land">
+  <meta property="og:description" content="I can also put my animation easily into these posts.  Like this small animation about quantum friction:      Try and drag the top atom around! Depending on whether you switched the material response on or off the mirroratom will or will not follow the motion of the atom above the material. ">
   <meta property="og:locale" content="en-us">
   
-  <meta property="og:updated_time" content="2016-04-20T00:00:00&#43;02:00">
+  <meta property="article:published_time" content="2018-08-03T18:02:11&#43;02:00">
+  
+  <meta property="article:modified_time" content="2018-08-03T18:02:11&#43;02:00">
   
 
   
 
   
 
-  <title>cheger.land</title>
+  <title>D3 Animations in Hugo | cheger.land</title>
 
 </head>
-<body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71" >
+<body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
 
 <nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
   <div class="container">
@@ -124,7 +129,7 @@
         
 
         <li class="nav-item">
-          <a href="/#about" data-target="#about">
+          <a href="/#about">
             
             <span>Home</span>
             
@@ -143,7 +148,7 @@
         
 
         <li class="nav-item">
-          <a href="/#publications_selected" data-target="#publications_selected">
+          <a href="/#publications_selected">
             
             <span>Publications</span>
             
@@ -162,7 +167,7 @@
         
 
         <li class="nav-item">
-          <a href="/#posts" data-target="#posts">
+          <a href="/#posts">
             
             <span>Posts</span>
             
@@ -183,7 +188,7 @@
           <ul class="dropdown-menu">
             
             <li class="nav-item">
-              <a href="/post/sage" data-target="/post/sage">
+              <a href="/post/sage">
                 
                 <span>CAS</span>
                 
@@ -191,7 +196,7 @@
             </li>
             
             <li class="nav-item">
-              <a href="/post/latex" data-target="/post/latex">
+              <a href="/post/latex">
                 
                 <span>Latex</span>
                 
@@ -199,7 +204,7 @@
             </li>
             
             <li class="nav-item">
-              <a href="/post/zotero" data-target="/post/zotero">
+              <a href="/post/zotero">
                 
                 <span>Library</span>
                 
@@ -207,7 +212,7 @@
             </li>
             
             <li class="nav-item">
-              <a href="/post/linux" data-target="/post/linux">
+              <a href="/post/linux">
                 
                 <span>OS</span>
                 
@@ -215,7 +220,7 @@
             </li>
             
             <li class="nav-item">
-              <a href="/post/pyjupyter" data-target="/post/pyjupyter">
+              <a href="/post/pyjupyter">
                 
                 <span>Programming</span>
                 
@@ -223,7 +228,7 @@
             </li>
             
             <li class="nav-item">
-              <a href="/post/website" data-target="/post/website">
+              <a href="/post/website">
                 
                 <span>Website</span>
                 
@@ -245,7 +250,7 @@
         
 
         <li class="nav-item">
-          <a href="/#contact" data-target="#contact">
+          <a href="/#contact">
             
             <span>Contact</span>
             
@@ -264,373 +269,87 @@
 </nav>
 
 
-
-<span id="homepage" style="display: none"></span>
-
+<article class="article" itemscope itemtype="http://schema.org/Article">
 
   
 
 
+  <div class="article-container">
+    <h1 itemprop="name">D3 Animations in Hugo</h1>
 
+    
 
+<div class="article-metadata">
+
+  
+
+  <span class="article-date">
+    
+    <meta content="2018-08-03 18:02:11 &#43;0200 CEST" itemprop="datePublished">
+    <time datetime="2018-08-03 18:02:11 &#43;0200 CEST" itemprop="dateModified">
+      Aug 3, 2018
+    </time>
+  </span>
+  <span itemscope itemprop="author publisher" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Christoph H. Egerland">
+  </span>
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    1 min read
+  </span>
+  
+
+  
+  
 
   
   
   
-  <section id="about" class="home-section">
-    <div class="container">
-      
+  
+
+  
+  
+
+  
+
+</div>
 
 
+    <div class="article-style" itemprop="articleBody">
+      I can also put my animation easily into these posts. </br>
+Like this small animation about quantum friction: 
 
-<div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person" itemref="person-email person-address">
-  <div class="col-xs-12 col-md-4">
-    <div id="profile">
+<svg width="720" height="250"></svg>
+<script src="//d3js.org/d3.v4.min.js"></script>
+<script type="text/javascript" src="/js/quantfric.js"></script>
 
-      
-      <div class="portrait" style="background-image: url('/img/christoph.png');"></div>
-      <meta itemprop="image" content="/img/christoph.png">
-      
+<div id="option"> 
+<input name="updateButton" type="button" value="Material" onclick="matswitch()" />
+</div>
 
-      <div class="portrait-title">
-        <h2 itemprop="name">Christoph H. Egerland</h2>
-        <h3 itemprop="jobTitle">Student</h3>
-
-        
-        
-
-        
-        <h3 itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
-          
-          <span itemprop="name">Humboldt University Berlin</span>
-          
-        </h3>
-        
-      </div>
-
-      <link itemprop="url" href="/">
-
-      <ul class="network-icon" aria-hidden="true">
-        
-        
-        <li>
-          <a itemprop="sameAs" href="mailto:egerlanc@physik.hu-berlin.de" target="_blank" rel="noopener">
-            <i class="fa fa-envelope big-icon"></i>
-          </a>
-        </li>
-        
-        
-        <li>
-          <a itemprop="sameAs" href="//github.com/chegerland" target="_blank" rel="noopener">
-            <i class="fa fa-github big-icon"></i>
-          </a>
-        </li>
-        
-      </ul>
+</br>
+Try and drag the top atom around! Depending on whether you switched the material response on or off the mirroratom will or will not follow the motion of the atom above the material.
 
     </div>
-  </div>
-  <div class="col-xs-12 col-md-8" itemprop="description">
 
     
 
-<h1 id="biography">Biography</h1>
-
-<p>I am a master student of theoretical physics at the Humboldt University Berlin. My research interests include fluctuation-induced phenomena (such as the Casimir effect and quantum friction).</p>
-
-<p>I am currently working as a research assistant in the lab of Dr. Francesco Intravaia at the Max-Born-Institut.</p>
-
-<p>(This site is still under construction.)</p>
-
-
-    <div class="row">
-
-      
-      <div class="col-sm-5">
-        <h3>Interests</h3>
-        <ul class="ul-interests">
-          
-          <li>Fluctuation-induced phenomena</li>
-          
-          <li>Theoretical Physics</li>
-          
-          <li>Stochastic Processes</li>
-          
-        </ul>
-      </div>
-      
-
-      
-      <div class="col-sm-7">
-        <h3>Education</h3>
-        <ul class="ul-edu fa-ul">
-          
-          <li>
-            <i class="fa-li fa fa-graduation-cap"></i>
-            <div class="description">
-              <p class="course">BSc in Physics, 2017</p>
-              <p class="institution">Humboldt University Berlin</p>
-            </div>
-          </li>
-          
-        </ul>
-      </div>
-      
-
-    </div>
-  </div>
-</div>
-
-    </div>
-  </section>
-  
-
-  
-  
-  
-  <section id="publications" class="home-section">
-    <div class="container">
-      
 
 
 
-
-<div class="row">
-  <div class="col-xs-12 col-md-4 section-heading">
-    <h1>Publications</h1>
-    
-    
-  </div>
-  <div class="col-xs-12 col-md-8">
-    
 
     
-      
     
 
     
 
     
-    
-      
-        <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
-  <i class="fa fa-file-text-o pub-icon" aria-hidden="true"></i>
-  <span itemprop="author">
-    Christoph Egerland</span>.
-  <a href="/publication/bachelorthesis/" itemprop="name">Bachelorthesis</a>.
-  Plasmonic contribution to the Casimir force between two layers of graphene,
-  2018.
-  <p>
 
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="/pdf/bachelorthesis.pdf" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</p>
-</div>
-
-      
-    
 
   </div>
-</div>
-
-    </div>
-  </section>
-  
-
-  
-  
-  
-  <section id="posts" class="home-section">
-    <div class="container">
-      
-
-
-
-
-<div class="row">
-  <div class="col-xs-12 col-md-4 section-heading">
-
-    <h1>Recent Posts</h1>
-    
-    
-
-  </div>
-  <div class="col-xs-12 col-md-8">
-
-    
-
-    
-      
-
-      
-      
-
-        
-
-        
-        
-
-        
-        
-
-      
-      
-        
-        
-          
-
-<div class="pub-list-item" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
-  <i class="fa fa-newspaper-o pub-icon" aria-hidden="true"></i>
-  <a href="/post/anim/" itemprop="url"><span itemprop="headline">D3 Animations in Hugo</span></a>
-</div>
-
-        
-      
-
-      
-
-        
-
-        
-        
-
-        
-        
-
-      
-      
-        
-        
-          
-
-<div class="pub-list-item" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
-  <i class="fa fa-newspaper-o pub-icon" aria-hidden="true"></i>
-  <a href="/post/zotero/" itemprop="url"><span itemprop="headline">Academic Library Management Done Right</span></a>
-</div>
-
-        
-      
-
-      
-
-        
-
-        
-        
-
-        
-        
-
-      
-      
-        
-        
-          
-
-<div class="pub-list-item" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
-  <i class="fa fa-newspaper-o pub-icon" aria-hidden="true"></i>
-  <a href="/post/website/" itemprop="url"><span itemprop="headline">How To: This Website</span></a>
-</div>
-
-        
-      
-
-      
-    
-
-  </div>
-</div>
-
-    </div>
-  </section>
-  
-
-  
-  
-  
-  <section id="contact" class="home-section">
-    <div class="container">
-      
-
-
-
-
-<div class="row">
-  <div class="col-xs-12 col-md-4 section-heading">
-    <h1>Contact</h1>
-    
-  </div>
-  <div class="col-xs-12 col-md-8">
-    
-
-    <ul class="fa-ul" itemscope>
-
-      
-      <li>
-        <i class="fa-li fa fa-envelope fa-2x" aria-hidden="true"></i>
-        <span id="person-email" itemprop="email"><a href="mailto:egerlanc@physik.hu-berlin.de">egerlanc@physik.hu-berlin.de</a></span>
-      </li>
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-      <li>
-        <i class="fa-li fa fa-map-marker fa-2x" aria-hidden="true"></i>
-        <span id="person-address" itemprop="address">Max-Born-Strasse 2A, 12489 Berlin, Germany</span>
-      </li>
-      
-
-      
-
-    </ul>
-
-    
-    <div class="hidden">
-      <input id="map-provider" value="2">
-      <input id="map-lat" value="52.43133">
-      <input id="map-lng" value="13.52568">
-      <input id="map-dir" value="Max-Born-Strasse 2A, 12489 Berlin, Germany">
-      <input id="map-zoom" value="10">
-      <input id="map-api-key" value="">
-    </div>
-    <div id="map"></div>
-    
-
-  </div>
-</div>
-
-    </div>
-  </section>
-  
-
-
+</article>
 
 <footer class="site-footer">
   <div class="container">
@@ -732,5 +451,4 @@
 
   </body>
 </html>
-
 

@@ -13,6 +13,27 @@
     
     
     <item>
+      <title>D3 Animations in Hugo</title>
+      <link>/post/anim/</link>
+      <pubDate>Fri, 03 Aug 2018 18:02:11 +0200</pubDate>
+      
+      <guid>/post/anim/</guid>
+      <description>I can also put my animation easily into these posts.  Like this small animation about quantum friction:      Try and drag the top atom around! Depending on whether you switched the material response on or off the mirroratom will or will not follow the motion of the atom above the material. </description>
+    </item>
+    
+    <item>
+      <title>Academic Library Management Done Right</title>
+      <link>/post/zotero/</link>
+      <pubDate>Thu, 26 Jul 2018 15:09:34 +0200</pubDate>
+      
+      <guid>/post/zotero/</guid>
+      <description>It is really useful to keep a central place where you put all interesting things you find on the internet like Books, Websites, Articles, &amp;hellip; . For me this central place is Zotero.
+How my library is organized I like keeping four sublibraries for  textbooks my own calculations, transcripts and reviews papers, articles, theses and similar
+ websites  in which I don&amp;rsquo;t have any further ordering.
+Adding a new entry The feature I like most about Zotero is the Zotero Connector.</description>
+    </item>
+    
+    <item>
       <title>How To: This Website</title>
       <link>/post/website/</link>
       <pubDate>Wed, 25 Jul 2018 16:12:05 +0200</pubDate>
