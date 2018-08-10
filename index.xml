@@ -154,15 +154,6 @@ It basically syncs the .pdfs to a folder that can be synchronized with other com
     </item>
     
     <item>
-      <title>Bachelorthesis</title>
-      <link>/publication/bachelorthesis/</link>
-      <pubDate>Thu, 26 Jul 2018 13:59:04 +0200</pubDate>
-      
-      <guid>/publication/bachelorthesis/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>How To: This Website</title>
       <link>/post/website/</link>
       <pubDate>Wed, 25 Jul 2018 16:12:05 +0200</pubDate>
@@ -221,6 +212,15 @@ There is also &lt;a href=&#34;https://www.client9.com/using-font-awesome-icons-i
 
 &lt;p&gt;To use font awesome also as the icon of the webpage (the small atom) I used &lt;a href=&#34;http://fa2png.io/&#34; target=&#34;_blank&#34;&gt;fa2png&lt;/a&gt;.&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Bachelorthesis</title>
+      <link>/publication/bachelorthesis/</link>
+      <pubDate>Mon, 18 Dec 2017 00:00:00 +0100</pubDate>
+      
+      <guid>/publication/bachelorthesis/</guid>
+      <description></description>
     </item>
     
   </channel>
