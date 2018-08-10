@@ -91,7 +91,7 @@
   
   <meta property="article:modified_time" content="2018-07-25T16:12:05&#43;02:00">
   
-
+  <script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js" integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy" crossorigin="anonymous"></script>
   
 
   
@@ -136,7 +136,7 @@
 
         <li class="nav-item">
           <a href="/#about">
-            
+            <i class='fa fa-home'></i>
             <span>Home</span>
             
           </a>
@@ -154,8 +154,8 @@
         
 
         <li class="nav-item">
-          <a href="/#publications_selected">
-            
+          <a href="/#publications">
+            <i class='fa fa-book'></i>
             <span>Publications</span>
             
           </a>
@@ -174,7 +174,7 @@
 
         <li class="nav-item">
           <a href="/#posts">
-            
+            <i class='far fa-newspaper'></i>
             <span>Posts</span>
             
           </a>
@@ -186,7 +186,7 @@
         
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true">
-            
+            <i class='fas fa-desktop'></i>
             <span>Workflow</span>
             
             <span class="caret"></span>
@@ -195,7 +195,7 @@
             
             <li class="nav-item">
               <a href="/post/sage">
-                
+                <i class='fas fa-calculator'></i>
                 <span>CAS</span>
                 
               </a>
@@ -203,7 +203,7 @@
             
             <li class="nav-item">
               <a href="/post/latex">
-                
+                <i class='fas fa-align-left'></i>
                 <span>Latex</span>
                 
               </a>
@@ -211,7 +211,7 @@
             
             <li class="nav-item">
               <a href="/post/zotero">
-                
+                <i class='fas fa-book-reader'></i>
                 <span>Library</span>
                 
               </a>
@@ -219,7 +219,7 @@
             
             <li class="nav-item">
               <a href="/post/linux">
-                
+                <i class='fab fa-linux'></i>
                 <span>OS</span>
                 
               </a>
@@ -227,7 +227,7 @@
             
             <li class="nav-item">
               <a href="/post/pyjupyter">
-                
+                <i class='fab fa-python'></i>
                 <span>Programming</span>
                 
               </a>
@@ -235,7 +235,7 @@
             
             <li class="nav-item">
               <a href="/post/website">
-                
+                <i class='fas fa-globe'></i>
                 <span>Website</span>
                 
               </a>
@@ -257,7 +257,7 @@
 
         <li class="nav-item">
           <a href="/#contact">
-            
+            <i class='far fa-envelope'></i>
             <span>Contact</span>
             
           </a>
@@ -341,13 +341,13 @@ It was certainly a way to do it and for everyone who wants to try I can recommen
 I couldn&rsquo;t get the page to look the way I wanted it to look (which is probably my fault) and building the website took quite long, i.e. up to a minute.
 The webpage stood still for a couple of months until I discovered <a href="https://gohugo.io/" target="_blank">Hugo</a>, which for now is the perfect solution for me.</p>
 
-<h1 id="getting-started">Getting Started</h1>
+<h2 id="getting-started">Getting Started</h2>
 
 <p>The <a href="https://gohugo.io/getting-started/quick-start/" target="_blank">Quick Start</a> shows how to install Hugo and deploy a first website with it.
 Just like my last webpage, this page is hosted on GitHub and there&rsquo;s a nice <a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/" target="_blank">manual</a> on how to deploy Hugo as a GitHub Page.
 Furthermore I&rsquo;m using the <a href="https://sourcethemes.com/academic/docs/install" target="_blank">Academic Theme</a> on this site (with some small modifications).</p>
 
-<h1 id="managing-content">Managing Content</h1>
+<h2 id="managing-content">Managing Content</h2>
 
 <p>My workflow on this websites consists of starting the webpage with</p>
 
@@ -363,6 +363,17 @@ Saving the markdown files automatically rebuilds the site, so I can instantly se
 
 <pre><code>$ ./deploy.sh &quot;Commit message&quot;
 </code></pre>
+
+<h2 id="icons-in-hugo">Icons in Hugo</h2>
+
+<p>I am using my favorite icon set <a href="https://fontawesome.com/" target="_blank">Font Awesome</a>.
+To incorporate them in Hugo one has to add</p>
+
+<pre><code class="language-html">&lt;script defer src=&quot;https://use.fontawesome.com/releases/v5.2.0/js/all.js&quot; integrity=&quot;sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+</code></pre>
+
+<p>in <code>/themes/YOUR_THEME/layouts/partials/header.html</code>.
+There is also <a href="https://www.client9.com/using-font-awesome-icons-in-hugo/" target="_blank">another way</a> to embed icons, which I did not follow, mainly because I did not understand it.</p>
 
     </div>
 

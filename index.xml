@@ -120,13 +120,13 @@ It was certainly a way to do it and for everyone who wants to try I can recommen
 I couldn&amp;rsquo;t get the page to look the way I wanted it to look (which is probably my fault) and building the website took quite long, i.e. up to a minute.
 The webpage stood still for a couple of months until I discovered &lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34;&gt;Hugo&lt;/a&gt;, which for now is the perfect solution for me.&lt;/p&gt;
 
-&lt;h1 id=&#34;getting-started&#34;&gt;Getting Started&lt;/h1&gt;
+&lt;h2 id=&#34;getting-started&#34;&gt;Getting Started&lt;/h2&gt;
 
 &lt;p&gt;The &lt;a href=&#34;https://gohugo.io/getting-started/quick-start/&#34; target=&#34;_blank&#34;&gt;Quick Start&lt;/a&gt; shows how to install Hugo and deploy a first website with it.
 Just like my last webpage, this page is hosted on GitHub and there&amp;rsquo;s a nice &lt;a href=&#34;https://gohugo.io/hosting-and-deployment/hosting-on-github/&#34; target=&#34;_blank&#34;&gt;manual&lt;/a&gt; on how to deploy Hugo as a GitHub Page.
 Furthermore I&amp;rsquo;m using the &lt;a href=&#34;https://sourcethemes.com/academic/docs/install&#34; target=&#34;_blank&#34;&gt;Academic Theme&lt;/a&gt; on this site (with some small modifications).&lt;/p&gt;
 
-&lt;h1 id=&#34;managing-content&#34;&gt;Managing Content&lt;/h1&gt;
+&lt;h2 id=&#34;managing-content&#34;&gt;Managing Content&lt;/h2&gt;
 
 &lt;p&gt;My workflow on this websites consists of starting the webpage with&lt;/p&gt;
 
@@ -142,6 +142,17 @@ Saving the markdown files automatically rebuilds the site, so I can instantly se
 
 &lt;pre&gt;&lt;code&gt;$ ./deploy.sh &amp;quot;Commit message&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;icons-in-hugo&#34;&gt;Icons in Hugo&lt;/h2&gt;
+
+&lt;p&gt;I am using my favorite icon set &lt;a href=&#34;https://fontawesome.com/&#34; target=&#34;_blank&#34;&gt;Font Awesome&lt;/a&gt;.
+To incorporate them in Hugo one has to add&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;script defer src=&amp;quot;https://use.fontawesome.com/releases/v5.2.0/js/all.js&amp;quot; integrity=&amp;quot;sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy&amp;quot; crossorigin=&amp;quot;anonymous&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;in &lt;code&gt;/themes/YOUR_THEME/layouts/partials/header.html&lt;/code&gt;.
+There is also &lt;a href=&#34;https://www.client9.com/using-font-awesome-icons-in-hugo/&#34; target=&#34;_blank&#34;&gt;another way&lt;/a&gt; to embed icons, which I did not follow, mainly because I did not understand it.&lt;/p&gt;
 </description>
     </item>
     
