@@ -13,6 +13,15 @@
     
     
     <item>
+      <title>Various Tools</title>
+      <link>/post/tools/</link>
+      <pubDate>Fri, 10 Aug 2018 20:23:44 +0200</pubDate>
+      
+      <guid>/post/tools/</guid>
+      <description>sent  tool for presentations based on Takahashi method minimal, easy to write  mathpix  screenshot of any equation to LaTeX unfortunately only for Mac and mobiles There is a small workaround for Linux. Mathpix is based on an API that you can call up to 1000 times per month for free. So just get an API key, create a file eqtotex.py  #!/usr/bin/env python # imports import sys import base64 import requests import json # file path of picture file_path = str(sys.</description>
+    </item>
+    
+    <item>
       <title>D3 Animations in Hugo</title>
       <link>/post/anim/</link>
       <pubDate>Fri, 03 Aug 2018 18:02:11 +0200</pubDate>

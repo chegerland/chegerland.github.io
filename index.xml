@@ -11,6 +11,71 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Various Tools</title>
+      <link>/post/tools/</link>
+      <pubDate>Fri, 10 Aug 2018 20:23:44 +0200</pubDate>
+      
+      <guid>/post/tools/</guid>
+      <description>
+
+&lt;h2 id=&#34;sent-https-tools-suckless-org-sent&#34;&gt;&lt;a href=&#34;https://tools.suckless.org/sent/&#34; target=&#34;_blank&#34;&gt;sent&lt;/a&gt;&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;tool for presentations&lt;/li&gt;
+&lt;li&gt;based on &lt;a href=&#34;https://en.wikipedia.org/wiki/Takahashi_method&#34; target=&#34;_blank&#34;&gt;Takahashi method&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;minimal, easy to write&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;mathpix-https-mathpix-com&#34;&gt;&lt;a href=&#34;https://mathpix.com/&#34; target=&#34;_blank&#34;&gt;mathpix&lt;/a&gt;&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;screenshot of any equation to LaTeX&lt;/li&gt;
+&lt;li&gt;unfortunately only for Mac and mobiles
+There is a small workaround for Linux. Mathpix is based on an API that you can call up to 1000 times per month for free.
+So just get an &lt;a href=&#34;https://mathpix.com/api.html&#34; target=&#34;_blank&#34;&gt;API key&lt;/a&gt;, create a file &lt;code&gt;eqtotex.py&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;#!/usr/bin/env python
+
+# imports
+import sys
+import base64
+import requests
+import json
+
+# file path of picture
+file_path = str(sys.argv[1]);
+
+# request api
+image_uri = &amp;quot;data:image/jpg;base64,&amp;quot; + base64.b64encode(open(file_path, &amp;quot;rb&amp;quot;).read())
+r = requests.post(&amp;quot;https://api.mathpix.com/v3/latex&amp;quot;,
+    data=json.dumps({&#39;src&#39;: image_uri}),
+    headers={&amp;quot;app_id&amp;quot;: &amp;quot;YOUR_APP_ID&amp;quot;, &amp;quot;app_key&amp;quot;: &amp;quot;YOUR_APP_KEY&amp;quot;,
+            &amp;quot;Content-type&amp;quot;: &amp;quot;application/json&amp;quot;})
+data = json.loads(r.text);
+
+# print latex code
+print data[&#39;latex&#39;]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and for laziness create a bash script called &lt;code&gt;eq2tex&lt;/code&gt; in your PATH&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#!/bin/bash
+
+# execute python script with file as argument (e.g. eq.jpg)
+echo `python2 /path/to/eqtotex.py $1`
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then if you have a picture of an equation, let&amp;rsquo;s say &lt;code&gt;testeq.jpg&lt;/code&gt;, simply type into the terminal&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ eq2tex /path/to/testeq.jpg
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and the LaTeX code of that equation is printed into the terminal.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>D3 Animations in Hugo</title>
       <link>/post/anim/</link>
       <pubDate>Fri, 03 Aug 2018 18:02:11 +0200</pubDate>
@@ -77,7 +142,7 @@ My citation key format is &lt;code&gt;[auth:lower][shortyear]&lt;/code&gt;.&lt;/
 
 &lt;h2 id=&#34;a-central-place-for-the-files-synchronization&#34;&gt;A central place for the files / Synchronization&lt;/h2&gt;
 
-&lt;p&gt;One can syncrhonize the Zotero library if one creates an account.
+&lt;p&gt;One can synchronize the Zotero library if one creates an account.
 However a disadvantage of that is, that only the information, not necessarily the papers etc. get synchronized/backupped.
 Zotero also has the slight flaw of introducing its own storage system that is not just one folder with all the .pdfs and so on crammed into it.&lt;/p&gt;
 
@@ -153,6 +218,8 @@ To incorporate them in Hugo one has to add&lt;/p&gt;
 
 &lt;p&gt;in &lt;code&gt;/themes/YOUR_THEME/layouts/partials/header.html&lt;/code&gt;.
 There is also &lt;a href=&#34;https://www.client9.com/using-font-awesome-icons-in-hugo/&#34; target=&#34;_blank&#34;&gt;another way&lt;/a&gt; to embed icons, which I did not follow, mainly because I did not understand it.&lt;/p&gt;
+
+&lt;p&gt;To use font awesome also as the icon of the webpage (the small atom) I used &lt;a href=&#34;http://fa2png.io/&#34; target=&#34;_blank&#34;&gt;fa2png&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     

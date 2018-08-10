@@ -63,6 +63,20 @@
 
   
   
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-123760230-1', 'auto');
+      
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
   
 
   
@@ -234,6 +248,14 @@
             </li>
             
             <li class="nav-item">
+              <a href="/post/tools">
+                <i class='fas fa-wrench'></i>
+                <span>Tools</span>
+                
+              </a>
+            </li>
+            
+            <li class="nav-item">
               <a href="/post/website">
                 <i class='fas fa-globe'></i>
                 <span>Website</span>
@@ -374,6 +396,8 @@ To incorporate them in Hugo one has to add</p>
 
 <p>in <code>/themes/YOUR_THEME/layouts/partials/header.html</code>.
 There is also <a href="https://www.client9.com/using-font-awesome-icons-in-hugo/" target="_blank">another way</a> to embed icons, which I did not follow, mainly because I did not understand it.</p>
+
+<p>To use font awesome also as the icon of the webpage (the small atom) I used <a href="http://fa2png.io/" target="_blank">fa2png</a>.</p>
 
     </div>
 
