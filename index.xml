@@ -81,7 +81,8 @@ echo `python2 /path/to/eqtotex.py $1`
       <pubDate>Fri, 03 Aug 2018 18:02:11 +0200</pubDate>
       
       <guid>/post/anim/</guid>
-      <description>I can also put my animation easily into these posts. &lt;/br&gt;
+      <description>
+I can also put my animation easily into these posts. &lt;/br&gt;
 Like this small animation about quantum friction: 
 
 &lt;svg width=&#34;720&#34; height=&#34;250&#34;&gt;&lt;/svg&gt;
