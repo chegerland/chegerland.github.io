@@ -2,13 +2,13 @@
 var svg = d3.select("svg"),
     width = svg.attr("width"),
     height = svg.attr("height"),
-    dragdur = 80,
+    dragdur = 300,
     material = true;
 
 // data of objects 
 var atomData = [{"x": 50, "y": 50, "width": 70, "height": 70}];
 var mirroratomData = [{"x": 50, "y": 160, "width": atomData[0].width, "height": atomData[0].height, "opacity": 0.5}];
-var metalData = [{"x": 0, "y": 150, "width": +svg.attr("width") , "height": 90}];
+var metalData = [{"x": 0, "y": 150, "width": parseInt(svg.attr("width"))/100*document.body.clientWidth , "height": 90}];
 var fricData = [{"x1": atomData[0].x+0.5*atomData[0].width, "y1": atomData[0].y+0.5*atomData[0].height, "x2": mirroratomData[0].x+0.5*mirroratomData[0].width , "y2": mirroratomData[0].y+0.5*mirroratomData[0].height}];
 
 // atom
@@ -64,7 +64,7 @@ function dragged(d) {
     d3.select(this).attr("x", function(d){
         d.x = d3.event.x; 
         if (d.x < 0) d.x = 0;
-        if (d.x > svg.attr("width")-atomData[0].width) d.x = svg.attr("width")-atomData[0].width;
+        if (d.x > parseInt(svg.attr("width"))/100*document.body.clientWidth-atomData[0].width) d.x = parseInt(svg.attr("width"))/100*document.body.clientWidth-atomData[0].width;
         return d.x;
     });
 
@@ -83,7 +83,7 @@ function dragged(d) {
               .attr("x", function(d) {
                 d.x = d3.event.x; 
                 if (d.x < 0) d.x = 0;
-                if (d.x > svg.attr("width")-mirroratomData[0].width) d.x = svg.attr("width")-mirroratomData[0].width;
+                if (d.x > parseInt(svg.attr("width"))/100*document.body.clientWidth-mirroratomData[0].width) d.x = parseInt(svg.attr("width"))/100*document.body.clientWidth-mirroratomData[0].width;
                 return d.x; });
 
     // drag force vector
@@ -92,7 +92,7 @@ function dragged(d) {
         .attr("x1", function(d) {
             d.x = d3.event.x + 0.5*atomData[0].width;
             if (d.x < 0.5*atomData[0].width) d.x = 0.5*atomData[0].width;
-            if (d.x > svg.attr("width")-0.5*atomData[0].width) d.x = svg.attr("width")-0.5*atomData[0].width;
+            if (d.x > parseInt(svg.attr("width"))/100*document.body.clientWidth-0.5*atomData[0].width) d.x = parseInt(svg.attr("width"))/100*document.body.clientWidth-0.5*atomData[0].width;
             return d.x; })
         .transition()
         .duration(drag)
@@ -100,7 +100,7 @@ function dragged(d) {
         .attr("x2", function(d) {
             d.x = d3.event.x + 0.5*mirroratomData[0].width;
             if (d.x < 0.5*mirroratomData[0].width) d.x = 0.5*mirroratomData[0].width;
-            if (d.x > svg.attr("width")-0.5*mirroratomData[0].width) d.x = svg.attr("width")-0.5*mirroratomData[0].width;
+            if (d.x > parseInt(svg.attr("width"))/100*document.body.clientWidth-0.5*mirroratomData[0].width) d.x = parseInt(svg.attr("width"))/100*document.body.clientWidth-0.5*mirroratomData[0].width;
             return d.x });
 
 }

@@ -1,0 +1,11 @@
+body {
+    font-family: "Helvetica", sans-serif;
+    line-height: 120%;
+    margin: 1.4em;
+    background: #fff;
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #000;
+}
