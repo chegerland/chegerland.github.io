@@ -1,11 +1,37 @@
-body {
+body 
+{
     font-family: "Helvetica", sans-serif;
     line-height: 120%;
-    margin: 1.4em;
     background: #fff;
     color: #333;
+    margin: auto;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-right: 2em;
+    padding-left: 2em;
+    max-width: 1100px;
+
 }
 
-h1, h2, h3 {
+h1, h2, h3 
+{
     color: #000;
+}
+
+a:link 
+{
+    text-decoration:none; 
+    color:#2200CC;
+}
+
+a:visited 
+{
+    text-decoration:none; 
+    color:#2A5DB0;
+}
+
+a:hover 
+{
+    text-decoration:underline; 
+    color:#2A5DB0;
 }
