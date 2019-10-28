@@ -5,30 +5,38 @@
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <title>Quantum Friction</title>
-  <style type="text/css">
+  <style>
       code{white-space: pre-wrap;}
       span.smallcaps{font-variant: small-caps;}
       span.underline{text-decoration: underline;}
       div.column{display: inline-block; vertical-align: top; width: 50%;}
   </style>
   <link rel="stylesheet" href="../css/blog.css" />
-  <script src="/usr/lib/nodejs/katex/dist/katex.min.js"></script><script src="/usr/lib/nodejs/katex/dist/contrib/auto-render.min.js"></script><script>document.addEventListener("DOMContentLoaded", function() {
-    renderMathInElement(document.body);
-  });</script><link rel="stylesheet" href="/usr/lib/nodejs/katex/dist/katex.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+    var mathElements = document.getElementsByClassName("math");
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") { katex.render(texText.data, mathElements[i], { displayMode: mathElements[i].classList.contains("display"), throwOnError: false } );
+    }}});</script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
   <script src="https://d3js.org/d3.v5.min.js" charset="utf-8"></script>
 </head>
 <body>
 <p><a href="../index.html">cheger.land</a> / <a href="../blog.html">blog</a> /</p>
 <h1 id="quantum-friction">Quantum Friction</h1>
 <p><em>9 December 2018</em></p>
-<p>Imagine the following situation: You are an atom flying with constant velocity <span class="math inline">\(v\)</span> over a metallic surface at, let’s say, zero temperature. Naively one would think that there are no effects to discover here, after all the atom is neutral, the sheet of metal above which you fly is neutral and there are no fluctuations since the temperature is zero. Wait a minute… the fluctuations stemming from the temperature might be zero, but there is another source of fluctuations! If we describe our system quantum mechanically we see that even as we approach the absolute zero there is still some fluctuation, or better, uncertainty left in our system.</p>
+<p>Imagine the following situation: You are an atom flying with constant velocity <span class="math inline">v</span> over a metallic surface at, let’s say, zero temperature. Naively one would think that there are no effects to discover here, after all the atom is neutral, the sheet of metal above which you fly is neutral and there are no fluctuations since the temperature is zero. Wait a minute… the fluctuations stemming from the temperature might be zero, but there is another source of fluctuations! If we describe our system quantum mechanically we see that even as we approach the absolute zero there is still some fluctuation, or better, uncertainty left in our system.</p>
 <p>These quantum fluctuations give rise to a lot of phenomena like the Casimir(-Polder) force or the one explained in the following, called quantum friction. Due to them the atom is in effect not always neutral, instead we can imagine the charges in it being all spontaneously on one side or another, so we have an effective dipole for a short time. Just as a normal electron in this situation, we can think of our atom inducing a mirror image of itself in the surface. It therefore gets attracted to the surface by a force which is called the Casimir-Polder force.</p>
 <p>If our atom is moving like in the situation above, it is crucial to look at the material properties. Considering a material that has no dissipation, the mirror atom can easily follow the original atom near instantaneously (at least when the atom is really close to the surface). However, if the material is dissipative, we can imagine the movement of the mirror atom being hindered by the material, so it lags a little bit behind. This results in a “diagonal” force between atom and mirror atom, that can be decomposed into two parts:</p>
 <ol type="1">
 <li>orthogonal to the movement we have our Casimir-Polder force, just as before</li>
 <li>parallel to the movement we now have a force that tries to slow down the atom which we will call quantum friction</li>
 </ol>
-<p>Quantum friction may be calculated by the following formula: <span class="math display">\[ F_{\mathrm{QF}}=-2\int_{0}^{\infty} d\omega \int\frac{dh}{2\pi}h~\text{Tr} \left[S(hv-\omega,v) \cdot g_{\Im}^{T}(h,\mathbf{R}_a,\omega) \right], \]</span> where <span class="math inline">\(v\)</span> is the velocity of the atom, <span class="math inline">\(g\)</span> is the scattered part of the Green’s tensor of the setup, …</p>
+<p>Quantum friction may be calculated by the following formula: <span class="math display"> F_{\mathrm{QF}}=-2\int_{0}^{\infty} d\omega \int\frac{dh}{2\pi}h~\text{Tr} \left[S(hv-\omega,v) \cdot g_{\Im}^{T}(h,\mathbf{R}_a,\omega) \right], </span> where <span class="math inline">v</span> is the velocity of the atom, <span class="math inline">g</span> is the scattered part of the Green’s tensor of the setup, …</p>
 <p>Now try it yourself! Drag the atom across the surface (with constant velocity :P) and get a feeling for the movement of the mirroratom.</p>
 <svg width="70%" height="250">
 </svg>
