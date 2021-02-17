@@ -1,6 +1,6 @@
 body 
 {
-    font-family: "Helvetica", sans-serif;
+    font-family: "Fira Sans", sans-serif;
     line-height: 120%;
     background: #fff;
     color: #333;
@@ -15,12 +15,22 @@ body
 
 h2
 {
+    font-size: 1.2em;
     margin-top: 1.5em;
 }
 
 h1, h2, h3 
 {
     color: #000;
+}
+
+h1 {
+    font-size: 1.5em;
+    font-weight:bold;
+}
+
+strong {
+    font-weight:600;
 }
 
 a:link 
@@ -37,6 +47,6 @@ a:visited
 
 a:hover 
 {
-    text-decoration:underline; 
+    text-decoration:none; 
     color:#2200CC;
 }
